@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourly - Travel Guide</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styleIndex.css">
+  <link rel="stylesheet" href="script2.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+      <!-- =========================
+         TRANSITION EFFECT
+    ========================== -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+        AOS.init({
+
+            duration:1000,
+            once:true
+
+        });
+    </script>
+
+<header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+    <div class="header-top">
+      <div class="container">
+        
+        <a href="students.html" class="logo">
+          <img src="logo/logo3.png" alt="Tourly logo" class="header-logo">
+        </a>
+
+        <!-- Wrapped Title and Navbar together -->
+        <div class="header-title-nav-wrapper">
+          <p class="navbar-title-text">Tanjung Sepat: The Hidden Village</p>
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+              <li><a href="about.html" class="navbar-link" data-nav-link>About</a></li>
+              <li><a href="attraction.html" class="navbar-link" data-nav-link>Attraction</a></li>
+              <li><a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a></li>
+              <li><a href="travel.html" class="navbar-link" data-nav-link>Travel Guide</a></li>
+              <li><a href="contact.html" class="navbar-link" data-nav-link>Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main>
+    <article>
+      <section class="travel-guide-section fade-up" data-aos="fade-up">
+        <div class="travel-landscape-wrapper">
+          
+          <div class="landscape-top-row">
+            <div class="intro-block">
+              <p class="section-subtitle">Plan Your Journey</p>
+              <h2 class="section-title">Essential Travel Guide</h2>
+              <p class="section-text">
+                Tanjung Sepat Unlocked: Your Insider Guide to Malaysia’s Best-Kept Coastal Secret.The Only Guide You Need to Experience Tanjung     Sepat Like a Local.
+              </p>
+            </div>
+
+            <div class="weather-charts-wrapper-panel">
+              <div class="weather-chart-header">
+                <h3 class="weather-title">Best Time to Visit</h3>
+                <p class="weather-subtitle"><span class="weather-icon">🌦️</span> Temperature Info The village</p>
+              </div>
+
+              <div class="large-charts-container" data-aos="fade-up">
+                <div class="chart-card-large">
+                  <div class="chart-legend">
+                    <span class="legend-item line-red">High Temp (°C)</span>
+                    <span class="legend-item line-blue">Low Temp (°C)</span>
+                  </div>
+                  <svg class="weather-chart-svg" viewBox="0 0 450 160" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="40" y1="25" x2="420" y2="25" stroke="#edf2f7" stroke-width="1" />
+                    <line x1="40" y1="65" x2="420" y2="65" stroke="#edf2f7" stroke-width="1" />
+                    <line x1="40" y1="105" x2="420" y2="105" stroke="#edf2f7" stroke-width="1" />
+                    
+                    <text x="5" y="30" class="chart-axis-text" font-size="10">35°C</text>
+                    <text x="5" y="70" class="chart-axis-text" font-size="10">25°C</text>
+                    <text x="5" y="110" class="chart-axis-text" font-size="10">15°C</text>
+
+                    <path d="M 50,49 L 83.6,41 L 117.2,41 L 150.8,41 L 184.4,41 L 218,49 L 251.6,49 L 285.2,49 L 318.8,49 L 352.4,49 L 386,49 L 419.6,49" 
+                          fill="none" stroke="#e53e3e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <path d="M 50,81 L 83.6,81 L 117.2,81 L 150.8,73 L 184.4,73 L 218,81 L 251.6,81 L 285.2,81 L 318.8,81 L 352.4,81 L 386,81 L 419.6,81" 
+                          fill="none" stroke="#3182ce" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+                    <g class="chart-axis-text" font-size="9" text-anchor="middle">
+                      <text x="50" y="145">Jan</text><text x="83.6" y="145">Feb</text><text x="117.2" y="145">Mar</text>
+                      <text x="150.8" y="145">Apr</text><text x="184.4" y="145">May</text><text x="218" y="145">Jun</text>
+                      <text x="251.6" y="145">Jul</text><text x="285.2" y="145">Aug</text><text x="318.8" y="145">Sep</text>
+                      <text x="352.4" y="145">Oct</text><text x="386" y="145">Nov</text><text x="419.6" y="145">Dec</text>
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="chart-card-large" data-aos="fade-up">
+                  <div class="chart-legend">
+                    <span class="legend-item line-orange">Rainy Days / Month</span>
+                  </div>
+                  <svg class="weather-chart-svg" viewBox="0 0 450 160" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="40" y1="25" x2="420" y2="25" stroke="#edf2f7" stroke-width="1" />
+                    <line x1="40" y1="65" x2="420" y2="65" stroke="#edf2f7" stroke-width="1" />
+                    <line x1="40" y1="105" x2="420" y2="105" stroke="#edf2f7" stroke-width="1" />
+                    
+                    <text x="5" y="30" class="chart-axis-text" font-size="10">20 d</text>
+                    <text x="5" y="70" class="chart-axis-text" font-size="10">12 d</text>
+                    <text x="5" y="110" class="chart-axis-text" font-size="10">4 d</text>
+
+                    <path d="M 50,75 C 68,85 68,96 83.6,96 C 99.2,96 99.2,69 117.2,69 C 135.2,69 135.2,69 150.8,69 C 166.4,69 166.4,75 184.4,75 C 202.4,75 202.4,75 218,75 C 233.6,75 233.6,69 251.6,69 C 269.6,69 269.6,75 285.2,75 C 300.8,75 300.8,69 318.8,69 C 336.8,69 336.8,50 352.4,50 C 368,50 368,31 386,31 C 404,31 404,44 419.6,44" 
+                          fill="none" stroke="#dd6b20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+                    <g class="chart-axis-text" font-size="9" text-anchor="middle">
+                      <text x="50" y="145">Jan</text><text x="83.6" y="145">Feb</text><text x="117.2" y="145">Mar</text>
+                      <text x="150.8" y="145">Apr</text><text x="184.4" y="145">May</text><text x="218" y="145">Jun</text>
+                      <text x="251.6" y="145">Jul</text><text x="285.2" y="145">Aug</text><text x="318.8" y="145">Sep</text>
+                      <text x="352.4" y="145">Oct</text><text x="386" y="145">Nov</text><text x="419.6" y="145">Dec</text>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="landscape-functions-grid" data-aos="fade-up">
+              
+              <div class="guide-card transport-landscape">
+                <h3 class="card-title-main">Transportation Guide</h3>
+                <p class="card-subtitle-sub">By Road 🚙 🚌 🚢</p>
+                
+                <div class="transport-info-block">
+                  <div class="transport-item">
+                    <span class="transport-icon">🚙</span>
+                    <div><strong>Self-Driving:</strong> Direct via Federal Route 5 from KL (approx. 1.5 hours).</div>
+                  </div>
+                  <div class="transport-item">
+                    <span class="transport-icon">🚌</span>
+                    <div><strong>Public Bus:</strong> From TBS or Klang Sentral to Banting, then local e-hailing.</div>
+                  </div>
+                </div>
+                
+                <div class="transport-thumbnails" data-aos="fade-up"> 
+  <!-- 1. Wrap the bus timetable icon in an anchor link pointing to your PDF -->
+              <a href="document/jadual bas.pdf" target="_blank" class="thumb-placeholder-link">
+                  <div class="thumb-placeholder">🚌</div>
+                </a>
+                
+                <a href="https://www.rome2rio.com/ms/map/Kuala-Lumpur/Tanjung-Sepat?accom_comparison=true" target="_blank" class="thumb-placeholder-link">
+                  <div class="thumb-placeholder">📱</div>
+                </a>
+                
+                <a href="https://www.malaysianflavours.com/2016/01/tanjung-sepat-1-day-trip-what-to-do-tanjung-sepat.html" target="_blank" class="thumb-placeholder-link">
+                  <div class="thumb-placeholder">🗺️</div>
+                </a>
+            </div>
+              </div>
+
+              <div class="guide-card packing-landscape" data-aos="fade-up">
+                <h3 class="card-title-main">Your Packing & Tips</h3>
+                <div class="packing-subgrids">
+                  <div>
+                    <h4>Travel Hacks</h4>
+                    <ul class="guide-list">
+                      <li>🔌 Power adapters</li>
+                      <li>👟 Packing tars</li>
+                      <li>🧴 Mosquito cos</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Phrases</h4>
+                    <ul class="guide-list phrases-list">
+                      <li>Malay 🔊</li>
+                      <li>Yisman 🔊</li>
+                      <li>Hellov, 🔊</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Money Tips</h4>
+                    <ul class="guide-list">
+                      <li>🛍️ Market haggling</li>
+                      <li>👣 Free views</li>
+                    </ul>
+                  </div>
+                </div> </div> <div class="guide-card around-landscape">
+                <h3 class="card-title-main">Getting Around the Village</h3>
+                <p class="card-subtitle-sub">Village Maps</p>
+                    
+                <div class="around-split-content" data-aos="fade-up">
+                  <div class="around-items-list">
+                    <div class="around-item"><span class="around-icon">🚲</span><div>Bike Path</div></div>
+                    <div class="around-item"><span class="around-icon">👣</span><div>Walkable spots</div></div>
+                    <div class="around-item"><span class="around-icon">🚢</span><div>Docks & route</div></div>
+                  </div>
+                  
+                 <div class="village-map-container" id="mapTrigger" data-aos="fade-up">
+                  <img src="image/tanjungsepatmap.png" alt="Tanjung Sepat Eco-Tourism Map" class="village-map-img">
+                  <div class="map-overlay-hint">🔍 Click to enlarge</div>
+                </div>
+                </div> 
+                </div> 
+              </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- Website Information -->
+
+            <div class="footer-column">
+
+                <h3>Tanjung Sepat</h3>
+
+                <p>
+
+                    The Hidden Village
+
+                </p>
+
+                <p>
+
+                    Discover the charm of coastal heritage,
+                    local flavours, and community life.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="attraction.html">Attraction</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                    <li><a href="travel.html">Travel Guide</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Tanjung Sepat, Kuala Langat,
+                    Selangor, Malaysia
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@tanjungsepat.edu.my
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +60 3-0000 0000
+
+                </p>
+
+            </div>
+
+            <!-- Social Media -->
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            <p>
+
+                © 2026 Tanjung Sepat: The Hidden Village.
+                Developed for IMS458 Web Design and Development.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+  <a href="#top" class="go-top" data-go-top><ion-icon name="chevron-up-outline"></ion-icon></a>
+  <script src="./script2.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <div id="mapModal" class="map-modal">
+  <span class="map-modal-close">&times;</span>
+  <img class="map-modal-content" id="modalImg" alt="Enlarged Tanjung Sepat Map">
+</div>
+
+<script>
+  const modal = document.getElementById("mapModal");
+  const trigger = document.getElementById("mapTrigger");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".map-modal-close");
+
+  trigger.onclick = function() {
+    modal.style.display = "flex";
+    modalImg.src = this.querySelector('img').src;
+  }
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  // Close with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape" && modal.style.display === "flex") {
+      modal.style.display = "none";
+    }
+  });
+</script>
+</body>
+</html>

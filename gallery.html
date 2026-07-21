@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================================
+         Website: Tanjung Sepat: The Hidden Village
+         Page: Gallery
+         Course: IMS458 - Web Design and Development
+    ========================================== -->
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Tanjung Sepat: The Hidden Village</title>
+
+    <meta name="description"
+        content="Discover the hidden attractions of Tanjung Sepat including beaches, fishing villages, accommodation, and local cuisine.">
+
+    <meta name="keywords"
+        content="Tanjung Sepat, Attractions, Beach, Fishing Village, Seafood, Tourism, Malaysia">
+
+    <meta name="author" content="Your Group Name">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         TRANSITION EFFECT
+    ========================== -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+        AOS.init({
+
+            duration:1000,
+            once:true
+
+        });
+    </script>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+   <header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+    <div class="header-top">
+      <div class="container">
+        
+        <a href="students.html" class="logo">
+          <img src="logo/logo3.png" alt="Tourly logo" class="header-logo">
+        </a>
+
+        <!-- Wrapped Title and Navbar together -->
+        <div class="header-title-nav-wrapper">
+          <p class="navbar-title-text">Tanjung Sepat: The Hidden Village</p>
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+              <li><a href="about.html" class="navbar-link" data-nav-link>About</a></li>
+              <li><a href="attraction.html" class="navbar-link" data-nav-link>Attraction</a></li>
+              <li><a href="gallery.html" class="navbar-link active" data-nav-link>Gallery</a></li>
+              <li><a href="travel.html" class="navbar-link" data-nav-link>Travel Guide</a></li>
+              <li><a href="contact.html" class="navbar-link" data-nav-link>Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero-gallery" data-aos="fade-up">
+
+        <div class="hero-overlay">
+
+            <div class="hero-content">
+
+                <span class="page-tag">
+
+                Explore Through Photography
+
+                </span>
+
+                <h1>A Journey Through Tanjung Sepat</h1>
+
+                <p>
+
+                    Every photograph tells a story. Discover breathtaking coastal
+                    scenery, vibrant local culture, delicious cuisine, and unforgettable
+                    experiences through our collection of images showcasing
+                    Tanjung Sepat: The Hidden Village.
+
+                </p>
+
+                <a href="#galleryIntro" class="hero-btn">
+
+                    Start Exploring
+
+                <a href="#photoGallery" class="hero-btn secondary-btn">
+
+                    View Gallery
+
+                </a>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         GALLERY INTRODUCTION
+    ========================== -->
+
+    <section class="gallery-intro" id="galleryIntro">
+
+    <div class="container" data-aos="fade-up">
+
+        <div class="gallery-section-title">
+
+            <h1>
+
+                Capturing the Beauty of Tanjung Sepat
+
+            </h1>
+
+            <div class="section-line"></div>
+
+            <p>
+
+                Explore a visual collection that celebrates the natural beauty,
+                cultural heritage, local delicacies, and everyday life of
+                Tanjung Sepat. Each photograph offers a glimpse into the hidden
+                charm that makes this peaceful coastal town a memorable
+                destination for visitors.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     GALLERY STATISTICS
+===================================== -->
+
+<section class="gallery-stats">
+
+    <div class="container" data-aos="fade-up">
+
+        <div class="stats-grid">
+
+            <div class="stat-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-camera"></i>
+
+                <h2 class="counter" data-target="50">0+</h2>
+
+                <p>Beautiful Moments</p>
+
+            </div>
+
+            <div class="stat-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-sun"></i>
+
+                <h2 class="counter" data-target="10">0+</h2>
+
+                <p>Photography Spots</p>
+
+            </div>
+
+            <div class="stat-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-bowl-food"></i>
+
+                <h2 class="counter" data-target="15">0+</h2>
+
+                <p>Local Food Choices</p>
+
+            </div>
+
+            <div class="stat-card" data-aos="flip-right">
+
+            <i class="fa-solid fa-anchor"></i>
+
+            <h2 class="counter" data-target="100">0+</h2>
+
+            <p>Years of Local Heritage</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     GALLERY FILTER
+===================================== -->
+
+<section class="gallery-filter" id="photoGallery">
+
+    <div class="container" data-aos="fade-up">
+
+        <div class="gallery-section-title">
+
+            <h1>
+
+                Explore Our Collections
+
+            </h1>
+
+            <div class="section-line"></div>
+
+            <p>
+
+                Browse different collections showcasing the beauty,
+                culture, and experiences of Tanjung Sepat.
+
+            </p>
+
+        </div>
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="beach">
+
+                Beach
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="village">
+
+                Fishing Village
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="food">
+
+                Food & Local Cuisine
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="accommodation">
+
+                Accommodation
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     GALLERY GRID
+===================================== -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="gallery-grid">
+
+                    <!-- Beach -->
+
+                    <div class="gallery-item beach"
+                        data-title="Morning Coastline"
+                        data-category="Beach" data-aos="flip-left">
+                        <p id="image-count"></p>
+
+                        <img src="image/gallerypic/beach1.jpg"
+                        alt="Morning Coastline">
+
+                        <div class="gallery-overlay">
+
+                        <span>Beach</span>
+
+                        <h3>Morning Coastline</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-item beach"
+                        data-title="Morning Coastline"
+                        data-category="Beach" data-aos="zoom-in">
+
+                        <img src="image/gallerypic/beach2.jpg"
+                        alt="Morning Coastline">
+
+                        <div class="gallery-overlay">
+
+                        <span>Beach</span>
+
+                        <h3>Morning Coastline</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-item beach"
+                        data-title="Morning Coastline"
+                        data-category="Beach" data-aos="flip-right">
+
+                        <img src="image/gallerypic/beach3.jpg"
+                        alt="Morning Coastline">
+
+                        <div class="gallery-overlay">
+
+                        <span>Beach</span>
+
+                        <h3>Morning Coastline</h3>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Fishing Village -->
+
+                    <div class="gallery-item village"
+                        data-title="Traditional Fishing Boats"
+                        data-category="Fishing Village" data-aos="flip-left">
+                        <p id="image-count"></p>
+
+                        <img src="image/gallerypic/village1.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Fishing Village</span>
+
+                        <h3>Traditional Fishing Boats</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-item village"
+                        data-title="Traditional Fishing Boats"
+                        data-category="Fishing Village" data-aos="zoom-in">
+
+                        <img src="image/gallerypic/village2.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Fishing Village</span>
+
+                        <h3>Traditional Fishing Boats</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-item village"
+                        data-title="Traditional Fishing Boats"
+                        data-category="Fishing Village" data-aos="flip-right">
+
+                        <img src="image/gallerypic/village3.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Fishing Village</span>
+
+                        <h3>Traditional Fishing Boats</h3>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Food & Local Cuisine-->
+
+                    <div class="gallery-item food"
+                        data-title="Fresh Seafood"
+                        data-category="Food & Local Cuisine" data-aos="flip-left">
+                        <p id="image-count"></p>
+
+                        <img src="image/gallerypic/food1.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Food & Local Cuisine</span>
+
+                        <h3>Fresh Seafood</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-item food"
+                        data-title="Fresh Seafood"
+                        data-category="Food & Local Cuisine" data-aos="zoom-in">
+
+                        <img src="image/gallerypic/food2.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Food & Local Cuisine</span>
+
+                        <h3>Fresh Seafood</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-item food"
+                        data-title="Fresh Seafood"
+                        data-category="Food & Local Cuisine" data-aos="flip-right">
+
+                        <img src="image/gallerypic/food3.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Food & Local Cuisine</span>
+
+                        <h3>Fresh Seafood</h3>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Accommodation -->
+
+                    <div class="gallery-item accommodation"
+                        data-title="Relaxing & Enjoying The View"
+                        data-category="Accommodation" data-aos="flip-left">
+                        <p id="image-count"></p>
+
+                        <img src="image/gallerypic/accommodation1.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Accommodation</span>
+
+                        <h3>Relax & Enjoy the view</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-item accommodation"
+                        data-title="Relaxing & Enjoying The View"
+                        data-category="Accommodation" data-aos="zoom-in">
+
+                        <img src="image/gallerypic/accommodation2.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Accommodation</span>
+
+                        <h3>Relax & Enjoy the view</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-item accommodation"
+                        data-title="Relaxing & Enjoying The View"
+                        data-category="Accommodation" data-aos="flip-right">
+
+                        <img src="image/gallerypic/accommodation3.jpg">
+
+                        <div class="gallery-overlay">
+
+                        <span>Accommodation</span>
+
+                        <h3>Relax & Enjoy the view</h3>
+
+                        </div>
+
+                    </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     FEATURED COLLECTIONS
+===================================== -->
+
+<section class="featured-collections">
+
+    <div class="container" data-aos="fade-up">
+
+        <div class="gallery-section-title">
+
+            <h1>Featured Collections</h1>
+
+            <div class="section-line"></div>
+
+            <p>
+                Explore our carefully selected collections highlighting the
+                unique charm and character of Tanjung Sepat.
+            </p>
+            <br>
+
+        </div>
+
+        <div class="collection-grid">
+
+            <!-- Beach -->
+
+            <div class="collection-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-water"></i>
+
+                <h3>Nature & Scenery</h3>
+
+                <p>
+                    Discover peaceful beaches, stunning sunsets,
+                    and breathtaking coastal landscapes.
+                </p>
+
+                <button class="collection-btn"
+                        data-filter="beach">
+
+                    View Photos
+
+                </button>
+
+            </div>
+
+            <!-- Village -->
+
+            <div class="collection-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-fish-fins"></i>
+
+                <h3>Village Life</h3>
+
+                <p>
+
+                    Experience traditional fishing activities,
+                    local heritage, and everyday community life.
+
+                </p>
+
+                <button class="collection-btn"
+                        data-filter="village">
+
+                    View Photos
+
+                </button>
+
+            </div>
+
+            <!-- Food -->
+
+            <div class="collection-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-shrimp"></i>
+
+                <h3>Food & Cuisine</h3>
+
+                <p>
+
+                    Taste fresh seafood, famous handmade pau,
+                    Hainanese coffee, and many local delicacies.
+
+                </p>
+
+                <button class="collection-btn"
+                        data-filter="food">
+
+                    View Photos
+
+                </button>
+
+            </div>
+
+            <!-- Accommodation -->
+
+            <div class="collection-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-hotel"></i>
+
+                <h3>Stay & Relax</h3>
+
+                <p>
+
+                    Find comfortable accommodations that allow
+                    visitors to enjoy a relaxing coastal getaway.
+
+                </p>
+
+                <button class="collection-btn"
+                        data-filter="accommodation">
+
+                    View Photos
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     PHOTOGRAPHY TIPS
+===================================== -->
+
+<section class="photo-tips">
+
+    <div class="container" data-aos="fade-up">
+
+        <div class="gallery-section-title">
+
+            <h1>Photography Tips</h1>
+
+        <div class="section-line"></div>
+
+            <p>
+
+            Capture unforgettable memories while respecting the
+            local environment and community.
+
+            </p>
+            <br>
+
+        </div>
+
+            <div class="tips-grid">
+
+                <div class="tip-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-sun"></i>
+
+                <h3>Golden Hour</h3>
+
+                <p>
+
+                Visit between 6:30 PM and 7:15 PM for warm sunset
+                lighting along the beach.
+
+                </p>
+
+            </div>
+
+            <div class="tip-card" data-aos="flip-right">
+
+                <i class="fa-solid fa-camera"></i>
+
+                <h3>Best Camera Spots</h3>
+
+                <p>
+
+                The beach, fishing jetty, and village streets
+                offer excellent photo opportunities.
+
+                </p>
+
+            </div>
+
+            <div class="tip-card" data-aos="flip-right">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h3>Respect Nature</h3>
+
+            <p>
+
+            Protect the environment by avoiding littering and
+            staying on designated paths.
+
+            </p>
+
+        </div>
+
+        <div class="tip-card" data-aos="flip-right">
+
+            <i class="fa-solid fa-people-group"></i>
+
+            <h3>Respect the Community</h3>
+
+            <p>
+
+            Ask for permission before photographing local
+            residents to ensure a respectful visit.
+
+            </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =========================
+         BACK TO TOP BUTTON
+    ========================== -->
+
+    <button id="backToTop" aria-label="Back to Top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+<!-- =====================================
+     IMAGE LIGHTBOX
+===================================== -->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close-lightbox">&times;</span>
+
+    <!-- Previous Button -->
+    <button class="lightbox-btn prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <!-- Image -->
+    <div class="lightbox-content">
+
+        <img id="lightbox-img" src="" alt="Gallery Image">
+
+        <div class="lightbox-caption">
+
+            <h3 id="lightbox-title"></h3>
+
+            <p id="lightbox-category"></p>
+
+        </div>
+
+    </div>
+
+    <!-- Next Button -->
+    <button class="lightbox-btn next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- Website Information -->
+
+            <div class="footer-column">
+
+                <h3>Tanjung Sepat</h3>
+
+                <p>
+
+                    The Hidden Village
+
+                </p>
+
+                <p>
+
+                    Discover the charm of coastal heritage,
+                    local flavours, and community life.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="attraction.html">Attraction</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                    <li><a href="travel.html">Travel Guide</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Tanjung Sepat, Kuala Langat,
+                    Selangor, Malaysia
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@tanjungsepat.edu.my
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +60 3-0000 0000
+
+                </p>
+
+            </div>
+
+            <!-- Social Media -->
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            <p>
+
+                © 2026 Tanjung Sepat: The Hidden Village.
+                Developed for IMS458 Web Design and Development.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
